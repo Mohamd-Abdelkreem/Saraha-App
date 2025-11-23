@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+src/Config/.env.dev
+src/Config/.env.prod
+
+# Logs
+Logs/
+*.log
+src/Logs/
+
+# Build outputs
+dist/
+build/
+
+# Uploads
+src/Uploads/*
+!src/Uploads/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Misc
+.cache/
+coverage/
+temp/
+tmp/
+
+# Encryption keys
+*.pem
+*.key
+src/Encryption Keys/
