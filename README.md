@@ -48,50 +48,6 @@ cd Saraha-App
 npm install
 ```
 
-### Configuration
-
-Create/update `src/Config/.env.dev`:
-
-```env
-# Database
-DB_URL_LOCAL = "mongodb://127.0.0.1:27017/SarahaApp"
-PORT = 3000
-
-# Authentication
-SALT_ROUNDS = 10
-JWT_SECRET = "your_jwt_secret_key"
-ACCESS_TOKEN_EXPIRES_IN = "1h"
-REFRESH_TOKEN_EXPIRES_IN = 31536000
-
-# Token Signatures
-ACCESS_USER_TOKEN_SIGNATURE = "user_access_secret_key_minimum_32_characters_required_123456"
-REFRESH_USER_TOKEN_SIGNATURE = "user_refresh_secret_key_minimum_32_characters_required_654321"
-ACCESS_ADMIN_TOKEN_SIGNATURE = "admin_access_secret_key_minimum_32_characters_required_789012"
-REFRESH_ADMIN_TOKEN_SIGNATURE = "admin_refresh_secret_key_minimum_32_characters_required_210987"
-
-# Google OAuth (optional)
-WEB_CLIENT_ID = "your_google_client_id"
-
-# Email
-EMAIL_USER = "your_email@gmail.com"
-EMAIL_PASS = "your_app_password"
-EMAIL_FROM = "your_email@gmail.com"
-
-# Cloudinary (for image uploads)
-CLOUD_NAME = "your_cloud_name"
-CLOUD_API_KEY = "your_api_key"
-CLOUD_API_SECRET = "your_api_secret"
-
-# Encryption
-ENCRYPTION_SECRET_KEY = "12345678901234567890123456789012"
-
-# CORS
-WHITELISTED_DOMAINS = "http://localhost:3000"
-
-# Cookie
-COOKIE_EXPIRES_IN_MS = 2629746000
-```
-
 ### Running
 
 ```bash
